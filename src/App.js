@@ -16,6 +16,7 @@ function App() {
         <label htmlFor="first-name">First Name:</label>
         <input
           name="first-name"
+          type="text"
           required
           value={firstName}
           onChange={(e) => {
@@ -27,6 +28,7 @@ function App() {
         <input
           name="last-name"
           required
+          type="text"
           value={lastName}
           onChange={(e) => {
             setLastName(e.target.value);
