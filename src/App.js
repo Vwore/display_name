@@ -39,7 +39,7 @@ function App() {
         <br />
         <button type="submit">Submit</button>
       </form>
-      {showFullName ? <div>`Full Name: ${firstName} ${lastName}`</div> : null}
+      {showFullName ? <div>{`Full Name: ${firstName} ${lastName}`}</div> : null}
     </div>
   );
 }
