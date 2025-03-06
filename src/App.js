@@ -9,10 +9,12 @@ function App() {
   return (
     <div className="App">
       <h2>Full Name Display</h2>
-      <form onSubmit={(e) => {
-            e.preventDefault();
-            setShowFullName(true);
-          }}>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          setShowFullName(true);
+        }}
+      >
         <label htmlFor="first-name">First Name:</label>
         <input
           name="first-name"
@@ -35,14 +37,9 @@ function App() {
           }}
         ></input>
         <br />
-        <button
-          type="submit"
-          
-        >
-          Submit
-        </button>
+        <button type="submit">Submit</button>
       </form>
-      {showFullName ? `Full Name: ${firstName} ${lastName}` : null}
+      <div>{showFullName ? `Full Name: ${firstName} ${lastName}` : null}</div>
     </div>
   );
 }
